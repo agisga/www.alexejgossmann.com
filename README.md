@@ -1,6 +1,8 @@
 # 0foldcv.com
 
-To push edits to AWS S3 do:
+This Jekyll static site is hosted on AWS S3 with CloudFront.
+Changes can be pushed to AWS S3 conveniently with the [s3_website gem](https://github.com/laurilehmijoki/s3_website).
+Just do:
 
 ```
 s3_website push
