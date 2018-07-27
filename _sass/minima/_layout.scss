@@ -11,9 +11,9 @@
 }
 
 .site-title {
-  @include relative-font-size(1.865);
-  font-family: cursive, sans-serif;
-  font-weight: 300;
+  @include relative-font-size(2);
+  font-family: $title-font;
+  font-weight: 400;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
   margin-bottom: 0;
@@ -112,8 +112,8 @@
 }
 
 .footer-heading {
-  @include relative-font-size(1.125);
-  font-family: cursive, sans-serif;
+  @include relative-font-size(1.5);
+  font-family: $title-font;
   margin-bottom: $spacing-unit / 2;
 }
 
