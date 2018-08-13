@@ -2,13 +2,13 @@ title: 0-fold Cross-Validation
 author: Alexej Gossmann
 email: alexej.go@gmail.com
 description: > # this means to ignore newlines until "twitter_username:"
-  A blog about machine learning, statistics, data analysis,
+  A math-y blog about machine learning, statistics, data analysis,
   artificial intelligence, mathematics, computation, and related topics.
 
 # social links
 twitter_username: agisga
 github_username:  agisga
-rss: rss
+# rss: rss
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
@@ -19,9 +19,9 @@ rss: rss
 # googleplus_username: +jekyll
 
 # Mastodon instances
-# mastodon:
-# - username: jekyll
-#   instance: example.com
+mastodon:
+ - username: 0foldcv
+   instance: mathstodon.xyz
 # - username: jekyll2
 #   instance: example.com
 
@@ -42,5 +42,13 @@ minima:
 theme: minima
 
 plugins:
+ - jemoji
  - jekyll-feed
  - jekyll-seo-tag
+ - jekyll-scholar
+
+# Jekyll-scholar configuration
+scholar:
+  style: apa #ieee-with-url
+  source: ./_bibliography
+  bibliography: references.bib

@@ -10,4 +10,24 @@
   {%- endif -%}
   <!-- Font for the site title (see https://fonts.google.com/) -->
   <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+
+  <!-- MathJax integration and configuration-->
+  <!-- Define some macros; Turn on equation numbering (off by default) -->
+  <script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    TeX: {
+      equationNumbers: { autoNumber: "AMS" },
+      Macros: {
+        subscript: ['_{#1}', 1],
+        superscript: ['^{#1}', 1],
+        R: "{\\mathbb{R}}",
+        N: "{\\mathbb{N}}",
+        C: "{\\mathbb{C}}",
+        prob: "{\\mathrm{P}}",
+        E: "{\\mathrm{E}}"
+      }
+    }
+  });
+  </script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML' async></script>
 </head>
