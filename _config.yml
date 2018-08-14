@@ -28,7 +28,11 @@ mastodon:
 disqus:
   shortname: 0foldcv
 
-url: https://0foldcv.com/
+# From https://jekyllrb.com/docs/usage/:
+# If you want to build for your production environment:
+# * Set your production URL in `_config.yml` e.g. `url: https://example.com.`
+# * Run `JEKYLL_ENV=production bundle exec jekyll build`
+url: https://0foldcv.com
 
 show_excerpts: false # set to true to show excerpts on the homepage
 

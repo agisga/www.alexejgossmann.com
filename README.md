@@ -2,7 +2,14 @@
 
 This Jekyll static site is hosted on AWS S3 with CloudFront.
 Changes can be pushed to AWS S3 conveniently with the [s3_website gem](https://github.com/laurilehmijoki/s3_website).
-Just do:
+
+Build the website (Disqus comments appear only in production, i.e., `JEKYLL_ENV=production`):
+
+```
+JEKYLL_ENV=production bundle exec jekyll build
+```
+
+Then push to AWS S3:
 
 ```
 s3_website push
