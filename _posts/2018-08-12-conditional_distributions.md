@@ -74,16 +74,16 @@ It is also pointed out that
 In effect a conditional probability distribution is a family of ordinary probability distributions and so the whole theory carries over without change.
 {% endquote %}
 
-When I first came across this viewpoint, I found it incredibly enlightening to regard the conditional probability distribution as a *family* of ordinary probability distribution. :smile:
+When I first came across this viewpoint, I found it incredibly enlightening to regard the conditional probability distribution as a *family* of ordinary probability distributions. :smile:
 
 #### Example
 
-For example, assume that $$X$$ is integer-valued and non-negative, and that the conditional probability distribution of $$Y$$ for given $$X$$ is an [F-distribution](https://en.wikipedia.org/wiki/F-distribution) with $$d_1 = e^X$$ and $$d_2 = 2^X$$ degrees of freedom.
-Then the conditional probability distribution $$\prob(Y \vert X)$$ can be regarded as a family of ordinary probability distributions $$\prob(Y \vert X = x)$$, whose probability density functions look like this:
+For example, assume that $$X$$ is an integer-valued and non-negative random variable, and that the conditional probability distribution of $$Y$$ for given $$X$$ is an [F-distribution](https://en.wikipedia.org/wiki/F-distribution) (denoted $$\mathrm{F}(d_1, d_2)$$) with $$d_1 = e^X$$ and $$d_2 = 2^X$$ degrees of freedom.
+Then the conditional probability distribution of $$(Y \vert X)$$ can be regarded as a family of probability distributions $$\mathrm{F}(e^x, 2^x)$$ for $$x = 0, 1, 2, \dots$$, whose probability density functions look like this:
 
 ![Probability density functions of (Y\|X=x) for different values x]({{ "/assets/img/2018-08-12-conditional_distributions/conditional_densities.png" | absolute_url }})
 
-In addition, as pointed out above, if we know the marginal distribution of $$X$$, then the conditional probability distribution $$\prob(Y \vert X)$$ can be used to obtain the marginal probability distribution of $$Y$$, or to randomly sample from the marginal distribution.
+In addition, as pointed out above, if we know the marginal distribution of $$X$$, then the conditional probability distribution of $$(Y \vert X)$$ can be used to obtain the marginal probability distribution of $$Y$$, or to randomly sample from the marginal distribution.
 Practically it means that if we randomly generate a value of $$X$$ according to its probability distribution, and use this value to randomly generate a value of $$Y$$ according to the conditional distribution of $$Y$$ for the given $$X$$, then the observations resulting from this procedure follow the marginal distribution of $$Y$$.
 Continuing the previous example, assume that $$X$$ follows a [binomial distribution](https://en.wikipedia.org/wiki/Binomial_distribution) with parameters $$n = 5$$ and $$p = 0.5$$. Then the described simulation procedure estimates the following shape for the probability density function of $$\prob(Y)$$, the marginal distribution of $$Y$$:
 
@@ -123,7 +123,7 @@ $$
 \end{cases}
 $$
 
-A rather boring strictly decreasing function converging to $$1$$ as $$x\to\infty$$.
+A rather boring strictly decreasing function of $$x$$ converging to $$1$$ as $$x\to\infty$$.
 
 Thus, under the example's assumption on the distribution of $$X$$, the conditional expectation $$\E(Y \vert X)$$ is a discrete random variable, which has non-zero probability mass at the values $$2, 4/3, 8/7, 16/15,$$ and $$\infty$$.
 
@@ -182,7 +182,7 @@ Let $$I_{\{Y \in A\}}$$ be a random variable that is equal to one if and only if
 
 $$\prob(Y \in A \vert X = x) = \E(I_{\{Y \in A\}} \vert X = x).$$
 
-Under certain regularity conditions the above defines the conditional probability distribution $$\prob(Y \vert X)$$.
+Under certain regularity conditions the above defines the conditional probability distribution of $$(Y \vert X)$$.
 
 ## References
 
