@@ -25,6 +25,8 @@ mastodon:
 # - username: jekyll2
 #   instance: example.com
 
+disqus:
+  shortname: 0foldcv
 
 show_excerpts: false # set to true to show excerpts on the homepage
 
