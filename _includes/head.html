@@ -12,6 +12,16 @@
   <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
 
   <!-- MathJax integration and configuration-->
+  <!-- *** -->
+  <!-- For proper syntax for block or span-level mathematics in Kramdown see:
+    https://kramdown.gettalong.org/syntax.html#math-blocks
+    which essentially tells to always use $$...$$ for block as well as inline math;
+    if $$...$$ is used as delimiter then the syntax is identical to standard LaTeX
+    (with the only exception that | may need to be replaced with \vert);
+    if standard MathJax delimenters \(...\) or \[...\] are used then lots of
+    things need to be escaped with \ in different ways (for example,
+    \_ becomes _ but \\ is becomes <br>). -->
+  <!-- *** -->
   <!-- Define some macros; Turn on equation numbering (off by default) -->
   <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
