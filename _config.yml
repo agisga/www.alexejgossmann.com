@@ -28,6 +28,8 @@ mastodon:
 disqus:
   shortname: 0foldcv
 
+url: https://0foldcv.com/
+
 show_excerpts: false # set to true to show excerpts on the homepage
 
 # Minima date format
