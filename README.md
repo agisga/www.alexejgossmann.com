@@ -9,6 +9,8 @@ Build the website (Disqus comments appear only in production, i.e., `JEKYLL_ENV=
 JEKYLL_ENV=production bundle exec jekyll build
 ```
 
+(alternatively execute `scripts/build_production`).
+
 Then push to AWS S3:
 
 ```
