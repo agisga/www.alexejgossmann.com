@@ -170,7 +170,7 @@ This leads to the following general definition, which is stated in {% cite Felle
 
 Let $$Y$$ be a random variable, and let $$\mathcal{B}$$ be a $$\sigma$$-algebra of sets.
 
-1. A random variable $$U$$ is called a conditional expectation of $$X$$ relative to $$\mathcal{B}$$, or $$U = \E(X \vert \mathcal{B})$$, if it is $$\mathcal{B}$$-measurable and
+1. A random variable $$U$$ is called a conditional expectation of $$Y$$ relative to $$\mathcal{B}$$, or $$U = \E(Y \vert \mathcal{B})$$, if it is $$\mathcal{B}$$-measurable and
 
     $$\E(Y\cdot I_{B}) = \E(U \cdot I_{B}), \quad \forall B\in\mathcal{B}.$$
 
