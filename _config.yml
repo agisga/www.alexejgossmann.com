@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "twitter_username:"
   artificial intelligence, mathematics, computation, and related topics.
 
 # social links
-twitter_username: agisga
+# twitter_username: agisga
 github_username:  agisga
 # rss: rss
 # dribbble_username: jekyll
@@ -44,9 +44,9 @@ minima:
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
- - index.md
- - microblog.md
  - about.md
+ #- microblog.md
+ # "Blog" and "Microblog" links are included by default, see `_includes/header.html`
 
 # Build settings
 theme: minima
