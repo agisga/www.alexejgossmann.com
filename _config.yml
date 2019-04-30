@@ -2,10 +2,8 @@ title: 0-fold Cross-Validation
 author: Alexej Gossmann
 email: alexej.go@gmail.com
 description: > # this means to ignore newlines until "twitter_username:"
-  A math-y blog about machine learning, statistics, data analysis,
-  artificial intelligence, mathematics, computation, and related topics.
 
-show_excerpts: false # set to true to show excerpts on the homepage
+show_excerpts: true # set to true to show excerpts on the homepage
 
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
@@ -14,14 +12,14 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: 0foldcv
-    # github: agisga
-    # rss: rss
+    twitter: agisga
+    github: agisga
+    rss: feed.xml
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
     # instagram: jekyll
-    # linkedin: jekyll
+    linkedin: alexejgossmann
     # pinterest: jekyll
     # youtube: jekyll
     # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
