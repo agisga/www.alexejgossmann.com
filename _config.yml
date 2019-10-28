@@ -46,9 +46,12 @@ disqus:
 # * Run `JEKYLL_ENV=production bundle exec jekyll build`
 url: https://0foldcv.com
 
+# Set the permalink structure globally
+permalink: /:title/
+
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
- header_pages:
+header_pages:
   - about.md
 #  - microblog.md
 # "Blog" and "Microblog" links are included by default, see `_includes/header.html`
