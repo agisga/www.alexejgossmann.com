@@ -2,7 +2,7 @@ title: 0-fold Cross-Validation
 author: Alexej Gossmann
 email: alexej.go@gmail.com
 description: > # this means to ignore newlines until "twitter_username:"
-  Blogging aspirations: machine learning, statistics, deep learning, math, theory, application, creativity.
+  Blogging aspirations: machine learning, statistics, deep learning, math, theory, application, coding, creativity.
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
@@ -68,5 +68,9 @@ plugins:
 # Jekyll-scholar configuration
 scholar:
   style: apa #ieee-with-url
+  sort_by: year, month
+  order: descending
   source: ./_bibliography
-  bibliography: references.bib
+  bibliography: references.bib  # name of the default bibliography used to add references within posts
+  bibliography_template: bib  # bib.html in _layouts
+  repository: ./assets/pdf  # When generating bibliographies, Jekyll-Scholar will look in that folder to see if it contains a filename matching each entry's BibTeX key: if it does, the path to that file will be exposed to the bibliography template as the link property.
