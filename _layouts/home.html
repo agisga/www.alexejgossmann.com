@@ -2,17 +2,28 @@
 layout: default
 ---
 
+<!-- styles for the pager buttons -->
+<style>
+  ul.pager { text-align: center; list-style: none; }
+  ul.pager li { display: inline; padding: 10px; margin: 5px; }
+  ul.pager li.previous { font-weight: bold; font-size: smaller; }
+  ul.pager li.next { font-weight: bold; font-size: smaller; }
+  ul.pager li.nothingleft { font-weight: bold; font-size: smaller; text-decoration: line-through; color: #828282; }
+</style>
+
 <div class="home">
+  <!--
   {%- if page.title -%}
     <h1 class="page-heading">{{ page.title }}</h1>
   {%- endif -%}
+  -->
 
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
     <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
-      {%- for post in site.posts -%}
+      {%- for post in paginator.posts -%}
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
@@ -27,6 +38,26 @@ layout: default
       </li>
       {%- endfor -%}
     </ul>
+
+    {% if paginator.total_pages > 1 %}
+    <ul class="pager">
+      {% if paginator.previous_page %}
+        <li class="previous">
+            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&larr; Newer Posts</a>
+        </li>
+      {% else %}
+        <li class="nothingleft">Newer posts</li>
+      {% endif %}
+      <span class="page_number ">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <li class="next">
+            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Older Posts &rarr;</a>
+        </li>
+      {% else %}
+        <li class="nothingleft">Older posts</li>
+      {% endif %}
+    </ul>
+    {% endif %}
 
     <p class="feed-subscribe">
       <a href="{{ 'feed.xml' | relative_url }}">
