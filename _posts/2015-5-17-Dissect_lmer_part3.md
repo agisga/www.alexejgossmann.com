@@ -5,7 +5,7 @@ tags:
 - lme4
 ---
 
-This is the final part of my analysis of the function `lmer`, which is used to fit linear mixed models in the R package `lme4`. In two previous blog posts, we have seen the general layout of the function `lmer`, the dealings with the R model formula, and the setting up of the objective function for the optimization (see [part 1](http://agisga.github.io/Dissect_lmer_part1/) and [part 2](http://agisga.github.io/Dissect_lmer_part2/)).
+This is the final part of my analysis of the function `lmer`, which is used to fit linear mixed models in the R package `lme4`. In two previous blog posts, we have seen the general layout of the function `lmer`, the dealings with the R model formula, and the setting up of the objective function for the optimization (see [part 1]({% post_url 2015-5-10-Dissect_lmer_part1 %}) and [part 2]({% post_url 2015-5-15-Dissect_lmer_part2 %})).
 
 After the user-specified R model formula is evaluated to model matrices, vectors and parameters, and the objective function is generated, the function `optimizeLmer` is called from within `lmer` to carry out the optimization. We analyse `optimizeLmer` below.
 
