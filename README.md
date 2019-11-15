@@ -1,4 +1,4 @@
-# 0foldcv.com
+# Source for www.alexejgossmann.com
 
 This Jekyll static site is hosted on AWS S3 with CloudFront.
 Changes can be pushed to AWS S3 conveniently with the [s3_website gem](https://github.com/laurilehmijoki/s3_website).
