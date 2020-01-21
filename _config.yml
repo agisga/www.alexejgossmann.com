@@ -16,6 +16,7 @@ minima:
     twitter: agisga
     github: agisga
     rss: feed.xml
+    # devto: jekyll
     # dribbble: jekyll
     facebook: alexej.yexela
     # flickr:   jekyll
@@ -34,6 +35,13 @@ minima:
     mastodon:
       - username: 0foldcv
         instance: mathstodon.xyz
+    # - username: jekyll2
+    #   instance: example.com
+
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
     # - username: jekyll2
     #   instance: example.com
 
