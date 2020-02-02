@@ -59,7 +59,7 @@ xy_df %>%
     facet_wrap(~shift, ncol = 2) + theme_light() +
     labs(x = "", y = "")
 
-ggsave("../../img/2019-12-31-ccc/ccc_vs_pearson_no_noise.png")
+ggsave("../../img/2020-01-06-ccc/ccc_vs_pearson_no_noise.png")
 
 
 #--- With white noise
@@ -107,4 +107,32 @@ xy_df %>%
     facet_wrap(~shift, ncol = 2) + theme_light() +
     labs(x = "", y = "")
 
-ggsave("../../img/2019-12-31-ccc/ccc_vs_pearson_noise.png")
+ggsave("../../img/2020-01-06-ccc/ccc_vs_pearson_noise.png")
+
+###########################################
+### Diagram of sq dist to 45 degre line
+###########################################
+
+df1 = tibble(y1 = 5, y2 = 2.5)
+df2 = tibble(y1 = 0:5, y2 = 0:5)
+df3 = tibble(y1 = c(5, 3.75, 2.5, 3.75),
+             y2 = c(2.5, 3.75, 2.5, 1.25))
+df4 = tibble(y1 = c(5, 5), y2 = c(2.5, 5))
+set.seed(2020)
+y1_rand = runif(8, 0, 5)
+df5 = tibble(y1 = y1_rand, y2 = y1_rand + rnorm(8))
+
+df2 %>%
+  ggplot(aes(y1, y2)) + geom_line() +
+  geom_polygon(data = df3, alpha = 0.5) +
+  geom_segment(data = df1,
+               mapping=aes(x = y1, y = y2+0.1, xend = y1, yend = y2+2.4),
+               arrow=arrow(ends = "both", length = unit(0.1, "inches"))) + #, size=2, color="blue") + 
+  geom_segment(data = df1,
+               mapping=aes(x = y1, y = y2, xend = y1-1.25, yend = y2+1.25),
+               size = 1, color = "blue") +
+  geom_point(data = df1) + geom_point(data = df5) +
+  xlab(expression(y[1])) + ylab(expression(y[2])) +
+  theme_light() + coord_fixed()
+
+ggsave("../../img/2020-01-06-ccc/sq_dist_to_45_degree_line.png", height=2, width=2, units = "in")
