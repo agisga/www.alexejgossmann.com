@@ -1,8 +1,10 @@
 title: 0-fold Cross-Validation
-author: Alexej Gossmann
-email: 0foldcv@pm.me
+author:
+  name: Alexej Gossmann
+  email: 0foldcv@pm.me
 description: > # this means to ignore newlines until "twitter_username:"
-  Blogging aspirations: machine learning, statistics, deep learning, math, theory, application, coding, creativity.
+  Blogging aspirations: machine learning, statistics, deep learning,
+  math, theory, application, coding, creativity.
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
@@ -15,7 +17,6 @@ minima:
   social_links:
     twitter: agisga
     github: agisga
-    rss: feed.xml
     # devto: jekyll
     # dribbble: jekyll
     facebook: alexej.yexela

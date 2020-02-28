@@ -2,43 +2,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- include favicons.html -%}
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
-  <!-- Font for the site title (see https://fonts.google.com/) -->
-  <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
 
-  <!-- MathJax integration and configuration-->
-  <!-- *** -->
-  <!-- For proper syntax for block or span-level mathematics in Kramdown see:
-    https://kramdown.gettalong.org/syntax.html#math-blocks
-    which essentially tells to always use $$...$$ for block as well as inline math;
-    if $$...$$ is used as delimiter then the syntax is identical to standard LaTeX
-    (with the only exception that | may need to be replaced with \vert);
-    if standard MathJax delimenters \(...\) or \[...\] are used then lots of
-    things need to be escaped with \ in different ways (for example,
-    \_ becomes _ but \\ is becomes <br>). -->
-  <!-- *** -->
-  <!-- Define some macros; Turn on equation numbering (off by default) -->
-  <script type="text/x-mathjax-config">
-  MathJax.Hub.Config({
-    TeX: {
-      equationNumbers: { autoNumber: "AMS" },
-      Macros: {
-        subscript: ['_{#1}', 1],
-        superscript: ['^{#1}', 1],
-        R: "{\\mathbb{R}}",
-        N: "{\\mathbb{N}}",
-        C: "{\\mathbb{C}}",
-        prob: "{\\mathrm{P}}",
-        E: "{\\mathrm{E}}"
-      }
-    }
-  });
-  </script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS_CHTML' async></script>
+  {%- include custom-head.html -%}
+
 </head>
