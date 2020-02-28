@@ -1,18 +1,18 @@
 ---
 ---
 {{reference}}
-{% if entry.doi %}
-DOI: <a href="https://dx.doi.org/{{entry.doi}}">{{entry.doi}}</a>.
-{% endif %}
 {% if entry.arxiv %}
 arXiv version: <a href="https://arxiv.org/abs/{{ entry.arxiv }}">{{ entry.arxiv }}</a>.
 {% endif %}
+{% if entry.doi %}
+<br>:page_facing_up: DOI: <a href="https://dx.doi.org/{{entry.doi}}">{{entry.doi}}</a>
+{% endif %}
 {% if entry.github %}
-:octocat: Github repository: <a href="https://github.com/{{entry.github}}">{{entry.github}}</a>.
+<br>:octocat: Github repository: <a href="https://github.com/{{entry.github}}">{{entry.github}}</a>
 {% endif %}
 {% if entry.cran %}
-R package (CRAN): <a href="{{entry.cran}}">{{entry.cran}}</a>.
+<br>:package: R package (CRAN): <a href="{{entry.cran}}">{{entry.cran}}</a>
 {% endif %}
 {% if link %}
-<a href="{{link}}">Download PDF</a>.
+<br>:page_with_curl: <a href="{{link}}">Download PDF</a>
 {% endif %}
