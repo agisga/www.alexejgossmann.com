@@ -15,11 +15,11 @@ minima:
 
   # generate social links in footer
   social_links:
-    twitter: agisga
+    #twitter: agisga
     github: agisga
     # devto: jekyll
     # dribbble: jekyll
-    facebook: alexej.yexela
+    #facebook: alexej.yexela
     # flickr:   jekyll
     # instagram: jekyll
     linkedin: alexejgossmann
