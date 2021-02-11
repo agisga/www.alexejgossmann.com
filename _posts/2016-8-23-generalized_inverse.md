@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Generalized inverse of a symmetric matrix
+author: Alexej Gossmann
 tags:
 - math 
 ---

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Salaries by alma mater - an interactive visualization with R and plotly
+author: Alexej Gossmann
 date: 2017-04-27 23:08:00 -05:00
 tags:
 - r

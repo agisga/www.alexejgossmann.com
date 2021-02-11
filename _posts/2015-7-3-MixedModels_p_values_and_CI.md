@@ -1,6 +1,7 @@
 ---
 layout: post
 title: P-values and confidence intervals
+author: Alexej Gossmann
 tags:
 - ruby
 - mixed_models

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Dissecting lme4's lmer function. Part 3.
+author: Alexej Gossmann
 tags:
 - lme4
 ---

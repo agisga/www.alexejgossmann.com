@@ -1,6 +1,7 @@
 ---
 layout: post
 title: NMatrix column permutations
+author: Alexej Gossmann
 tags:
 - ruby
 - nmatrix

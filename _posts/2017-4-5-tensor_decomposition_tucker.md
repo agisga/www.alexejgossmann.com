@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Understanding the Tucker decomposition, and compressing tensor-valued data (with R code)
+author: Alexej Gossmann
 date: 2017-04-05 00:50:00 -05:00
 tags:
 - r

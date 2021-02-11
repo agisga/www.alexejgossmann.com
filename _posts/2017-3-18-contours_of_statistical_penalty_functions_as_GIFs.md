@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Contours of statistical penalty functions as GIF images
+author: Alexej Gossmann
 tags:
 - r
 - math

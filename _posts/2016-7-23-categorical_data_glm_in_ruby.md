@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Logistic regression with categorical data in Ruby
+author: Alexej Gossmann
 tags:
 - ruby
 - daru

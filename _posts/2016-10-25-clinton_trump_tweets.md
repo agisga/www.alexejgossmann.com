@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Tired of doing real math 1 - some visualizations of Hillary Clinton and Donald Trump tweets
+author: Alexej Gossmann
 tags:
 - tired of doing real math
 - visualization

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 5 ways to measure running time of R code
+author: Alexej Gossmann
 date: 2017-05-27 23:09:00 -05:00
 tags:
 - r

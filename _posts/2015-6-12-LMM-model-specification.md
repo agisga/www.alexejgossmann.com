@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Model specification for linear mixed model 
+author: Alexej Gossmann
 tags:
 - ruby
 - mixed_models

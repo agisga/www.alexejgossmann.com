@@ -1,6 +1,7 @@
 ---
 layout: post
 title: NMatrix with Intel MKL on my university's HPC
+author: Alexej Gossmann
 tags:
 - ruby
 - nmatrix

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Bootstrapping and bootstrap confidence intervals for linear mixed models
+author: Alexej Gossmann
 tags:
 - ruby
 - mixed_models

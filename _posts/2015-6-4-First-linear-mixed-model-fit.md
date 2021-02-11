@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A rudimentary first linear mixed model fit
+author: Alexej Gossmann
 tags:
 - ruby
 - mixed_models

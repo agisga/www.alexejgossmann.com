@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Freedman's paradox
+author: Alexej Gossmann
 date: 2017-06-05 20:00:00 -04:00
 tags:
 - r

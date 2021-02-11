@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Neural networks and deep learning - self-study and 2 presentations
+author: Alexej Gossmann
 tags:
 - math
 - python

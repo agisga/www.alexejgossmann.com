@@ -1,6 +1,7 @@
 ---
 layout: post
 title: The Lean PhD Student - Can The Lean Startup principles be applied to personal productivity in graduate school?
+author: Alexej Gossmann
 date: 2017-05-09 20:40:00 -05:00
 tags:
 - entrepreneurship

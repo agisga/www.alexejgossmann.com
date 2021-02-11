@@ -1,6 +1,7 @@
 ---
 layout: post
 title: dplyr basics
+author: Alexej Gossmann
 tags:
 - r
 ---

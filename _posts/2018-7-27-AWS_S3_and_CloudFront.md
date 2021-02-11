@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Setting up an HTTPS static site using AWS S3 and Cloudfront (and also Jekyll and s3_website)
+author: Alexej Gossmann
 tags:
 - AWS
 - cloud

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Understanding the CANDECOMP/PARAFAC Tensor Decomposition, aka CP; with R code
+author: Alexej Gossmann
 date: 2017-04-02 14:30:00 -05:00
 tags:
 - r

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: MixedModels Formula Interface and Categorical Variables
+author: Alexej Gossmann
 tags:
 - ruby
 - mixed_models

@@ -2,6 +2,7 @@
 layout: post
 external_url: https://agisga.github.io/Lehmanns_TSH_and_TPE/
 title: '"Testing Statistical Hypotheses" and "Theory of Point Estimation" impressions'
+author: Alexej Gossmann
 date: 2015-12-06
 tags:
 - math

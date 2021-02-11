@@ -1,6 +1,7 @@
 ---
 layout: post
 title: My first R package on CRAN
+author: Alexej Gossmann
 tags:
 - r
 - grpSLOPE

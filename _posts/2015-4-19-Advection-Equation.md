@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Solve an advection equation in Ruby with spitzy
+author: Alexej Gossmann
 tags:
 - ruby
 - spitzy

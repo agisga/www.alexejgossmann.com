@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A (naive) application of linear mixed models to genetics
+author: Alexej Gossmann
 tags:
 - ruby
 - mixed_models

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A comprehensive Linux command cheat sheet
+author: Alexej Gossmann
 date: 2017-03-25 10:30:15 -06:00
 tags:
 - linux
