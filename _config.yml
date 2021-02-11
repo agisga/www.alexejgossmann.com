@@ -66,6 +66,7 @@ permalink: /:title/
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
+  - papers.md
   - about.md
 #  - microblog.md
 # "Blog" and "Microblog" links are included by default, see `_includes/header.html`
