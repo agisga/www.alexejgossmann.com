@@ -17,6 +17,8 @@ Then push to AWS S3:
 s3_website push
 ```
 
+(under my current configuration may need to run: `~/.rbenv/versions/2.7.3/bin/s3_website push`)
+
 ------------------------
 
 # minima
