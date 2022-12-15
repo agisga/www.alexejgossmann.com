@@ -15,36 +15,26 @@ minima:
 
   # generate social links in footer
   social_links:
-    #twitter: agisga
-    github: agisga
-    # devto: jekyll
-    # dribbble: jekyll
-    #facebook: alexej.yexela
-    # flickr:   jekyll
-    # instagram: jekyll
-    linkedin: alexejgossmann
-    # pinterest: jekyll
-    # youtube: jekyll
-    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    # youtube_channel_name: CloudCannon
-    # telegram: jekyll
-    # googleplus: +jekyll
-    # microdotblog: jekyll
-    # keybase: jekyll
+#    - { platform: devto,          user_url: "https://dev.to/jekyll" }
+#    - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
+#    - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
+#    - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
+    - { platform: github,         user_url: "https://github.com/jekyll/agisga" }
+    - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=PBNVF8cAAAAJ" }
+#    - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
+#    - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/alexejgossmann" }
+#    - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
+#    - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
+#    - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
+#    - { platform: telegram,       user_url: "https://t.me/jekyll" }
+#    - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
+#    - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
     # Mastodon instances
     mastodon:
       - username: 0foldcv
         instance: mathstodon.xyz
-    # - username: jekyll2
-    #   instance: example.com
-
-    # GitLab instances
-    # gitlab:
-    # - username: jekyll
-    #   instance: example.com
-    # - username: jekyll2
-    #   instance: example.com
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
@@ -52,7 +42,7 @@ disqus:
   shortname: agisga
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
-google_analytics: UA-94080131-1
+#google_analytics: UA-94080131-1  # analytics is no longer useful for me
 
 # From https://jekyllrb.com/docs/usage/:
 # If you want to build for your production environment:
