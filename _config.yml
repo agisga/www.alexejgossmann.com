@@ -15,15 +15,15 @@ minima:
 
   # generate social links in footer
   social_links:
+    - { platform: github,         user_url: "https://github.com/jekyll/agisga" }
+    - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=PBNVF8cAAAAJ" }
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/alexejgossmann" }
 #    - { platform: devto,          user_url: "https://dev.to/jekyll" }
 #    - { platform: dribbble,       user_url: "https://dribbble.com/jekyll" }
 #    - { platform: facebook,       user_url: "https://www.facebook.com/jekyll" }
 #    - { platform: flickr,         user_url: "https://www.flickr.com/photos/jekyll" }
-    - { platform: github,         user_url: "https://github.com/jekyll/agisga" }
-    - { platform: google_scholar, user_url: "https://scholar.google.com/citations?user=PBNVF8cAAAAJ" }
 #    - { platform: instagram,      user_url: "https://www.instagram.com/jekyll" }
 #    - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
-    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/alexejgossmann" }
 #    - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
 #    - { platform: pinterest,      user_url: "https://www.pinterest.com/jekyll" }
 #    - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/1234567/jekyll" }
@@ -31,10 +31,10 @@ minima:
 #    - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
 #    - { platform: youtube,        user_url: "https://www.youtube.com/jekyll" }
 
-    # Mastodon instances
-    mastodon:
-      - username: 0foldcv
-        instance: mathstodon.xyz
+#    # Mastodon instances
+#    mastodon:
+#      - username: 0foldcv
+#        instance: mathstodon.xyz
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
 # You can find your shortname on the Settings page of your Disqus account
