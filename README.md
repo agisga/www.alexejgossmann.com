@@ -19,6 +19,18 @@ s3_website push
 
 (under my current configuration may need to run: `~/.rbenv/versions/2.7.3/bin/s3_website push`)
 
+## Alternative approach to the `s3_website` gem (which is no longer maintained)
+
+Use [aws-cli](https://github.com/aws/aws-cli):
+
+```
+aws s3 sync ./_site/ s3://www.alexejgossmann.com --acl public-read --delete --cache-control max-age=604800
+aws cloudfront create-invalidation --distribution-id <MY_AWS_CLOUDFRONT_DISTRIBUTION_ID> --paths "/*"
+```
+
+The above two lines are taken from <https://pagertree.com/blog/jekyll-site-to-aws-s3-using-github-actions>.
+
+
 ------------------------
 
 # minima
