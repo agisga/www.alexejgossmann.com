@@ -61,6 +61,8 @@
   * Open social links in new tabs (#625)
   * change base-font-family sequence (#654)
   * Fix responsiveness of social SVG sprites (#677)
+  * Improve &#34;Subscribe&#34; link in footer (#698)
+  * Fix deprecation warnings from Dart Sass (#700)
 
 ### Development Fixes
 
