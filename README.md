@@ -30,6 +30,9 @@ aws cloudfront create-invalidation --distribution-id <MY_AWS_CLOUDFRONT_DISTRIBU
 
 The above two lines are taken from <https://pagertree.com/blog/jekyll-site-to-aws-s3-using-github-actions>.
 
+`<MY_AWS_CLOUDFRONT_DISTRIBUTION_ID>` is the alpha numeric 14 characters of your associated Cloudfront distribution.
+It can be found by logging into AWS, then under "View all services" > "CloudFront", then look under the "ID" column in the table.
+
 
 ## Installation
 

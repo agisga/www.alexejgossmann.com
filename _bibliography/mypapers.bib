@@ -446,3 +446,37 @@
   abstract = {Monitoring the performance of machine learning (ML)-based risk prediction models in healthcare is complicated by the issue of confounding medical interventions (CMI): when an algorithm predicts a patient to be at high risk for an adverse event, clinicians are more likely to administer prophylactic treatment and alter the very target that the algorithm aims to predict. Ignoring CMI by monitoring only the untreated patients--whose outcomes remain unaltered--can inflate false alarm rates, because the evolution of both the model and clinician-ML interactions can induce complex dependencies in the data that violate standard assumptions. A more sophisticated approach is to explicitly account for CMI by modeling treatment propensities, but its time-varying nature makes accurate estimation difficult. Given the many sources of complexity in the data, it is important to determine situations in which a simple procedure that ignores CMI provides valid inference. Here we describe the special case of monitoring model calibration, under either the assumption of conditional exchangeability or time-constant selection bias. We introduce a new score-based cumulative sum (CUSUM) chart for monitoring in a frequentist framework and review an alternative approach using Bayesian inference. Through simulations, we investigate the benefits of combining model updating with monitoring and study when over-trust in a prediction model does (or does not) delay detection. Finally, we simulate monitoring an ML-based postoperative nausea and vomiting risk calculator during the COVID-19 pandemic.},
   archiveprefix = {arXiv},
 }
+
+
+@misc{corollerMultiomicsInvestigationPrognostic2023,
+  title = {Multi-Omics Investigation on the Prognostic and Predictive Factors in Metastatic Breast Cancer Using Data from {{Phase III}} Ribociclib Clinical Trials: {{A}} Statistical and Machine Learning Analysis Plan},
+  shorttitle = {Multi-Omics Investigation on the Prognostic and Predictive Factors in Metastatic Breast Cancer Using Data from {{Phase III}} Ribociclib Clinical Trials},
+  author = {Coroller, Thibaud and Sahiner, Berkman and Amatya, Anup and Gossmann, Alexej and Karagiannis, Konstantinos and Samala, Ravi K. and {Santana-Quintero}, Luis and Solovieff, Nadia and Wang, Craig and {Amiri-Kordestani}, Laleh and Cao, Qian and Cha, Kenny H. and Orbach, Rosane Charlab and Cross, Frank H. and Hu, Tingting and Huang, Ruihao and Kraft, Jeffrey and Krusche, Peter and Li, Yutong and Li, Zheng and Mazo, Ilya and Moloney, Conor and Paul, Rahul and Plawinski, Jason and Schnakenberg, Susan and Serra, Paolo and Smith, Sean and Song, Chi and Su, Fei and Subramaniam, Sajanth and Tiwari, Mohit and Vechery, Colin and Xiong, Xin and Zarate, Juan Pablo and Ziegler, Jonathan and Zhu, Hao and Chakravartty, Arunava and Liu, Qi and Ohlssen, David and Petrick, Nicholas and Schneider, Julie A. and Walderhaug, Mark and Zuber, Emmanuel},
+  year = {2023},
+  month = aug,
+  pages = {2023.08.30.23294367},
+  publisher = {{medRxiv}},
+  doi = {10.1101/2023.08.30.23294367},
+  urldate = {2023-09-17},
+  abstract = {In 2020, Novartis Pharmaceuticals Corporation and the U.S. Food and Drug Administration (FDA) started a 4-year scientific collaboration to find novel radiogenomics-based prognostic and predictive factors for HR+/HER2-metastatic breast cancer under a Research Collaboration Agreement. This manuscript aims to detail the guiding principles and methodology for this study. We include a discussion of internal and external clinical, genomics, imaging datasets, data processing workflows, and machine learning model development strategies. We also prospectively define our success criteria to ensure robust scientific outputs. Disclosure This publication reflects the views of the authors and should not be construed to represent FDA's views or policies.},
+  archiveprefix = {medRxiv},
+  copyright = {\textcopyright{} 2023, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NonCommercial-NoDerivs 4.0 International), CC BY-NC-ND 4.0, as described at http://creativecommons.org/licenses/by-nc-nd/4.0/},
+  langid = {english},
+}
+
+@misc{fengThisModelReliable2023,
+  title = {Is This Model Reliable for Everyone? {{Testing}} for Strong Calibration},
+  shorttitle = {Is This Model Reliable for Everyone?},
+  author = {Feng, Jean and Gossmann, Alexej and Pirracchio, Romain and Petrick, Nicholas and Pennello, Gene and Sahiner, Berkman},
+  year = {2023},
+  month = jul,
+  number = {arXiv:2307.15247},
+  eprint = {arXiv:2307.15247},
+  arxiv = {arXiv:2307.15247},
+  github = {jjfeng/testing_strong_calibration},
+  publisher = {{arXiv}},
+  urldate = {2023-09-17},
+  abstract = {In a well-calibrated risk prediction model, the average predicted probability is close to the true event rate for any given subgroup. Such models are reliable across heterogeneous populations and satisfy strong notions of algorithmic fairness. However, the task of auditing a model for strong calibration is well-known to be difficult -- particularly for machine learning (ML) algorithms -- due to the sheer number of potential subgroups. As such, common practice is to only assess calibration with respect to a few predefined subgroups. Recent developments in goodness-of-fit testing offer potential solutions but are not designed for settings with weak signal or where the poorly calibrated subgroup is small, as they either overly subdivide the data or fail to divide the data at all. We introduce a new testing procedure based on the following insight: if we can reorder observations by their expected residuals, there should be a change in the association between the predicted and observed residuals along this sequence if a poorly calibrated subgroup exists. This lets us reframe the problem of calibration testing into one of changepoint detection, for which powerful methods already exist. We begin with introducing a sample-splitting procedure where a portion of the data is used to train a suite of candidate models for predicting the residual, and the remaining data are used to perform a score-based cumulative sum (CUSUM) test. To further improve power, we then extend this adaptive CUSUM test to incorporate cross-validation, while maintaining Type I error control under minimal assumptions. Compared to existing methods, the proposed procedure consistently achieved higher power in simulation studies and more than doubled the power when auditing a mortality risk prediction model.},
+  archiveprefix = {arxiv},
+  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning,Statistics - Methodology},
+}
