@@ -9,6 +9,7 @@
   * Improve the msg to enable disqus in README (#627)
   * Make docs consistent with code (#657)
   * Highlight that the base branch is v3 (#719)
+  * Improve documentation for config options (#760)
 
 ### Minor Enhancements
 
@@ -35,6 +36,7 @@
   * Reduce spacing in the three largest headers (#538)
   * Add `auto` skin which honors the `prefers-color-scheme` media query (#634)
   * Add google scholar. (#673)
+  * Add `x` social icon (#756)
 
 ### Major Enhancements
 
