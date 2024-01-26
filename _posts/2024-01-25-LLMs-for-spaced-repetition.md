@@ -12,7 +12,7 @@ __Figure caption__: Models/prompts and their mean ratings along multiple rating 
 
 :sparkles: :sparkles: :sparkles:
 
-*Note on the open-source models used*: I ran the experiments described below at the end of November 2023 using a single GPU and models a available at that time. Given the pace at which LLMs develop, you should probably take the results with a grain of salt. Moreover, the locally run open-source models that I used may not have been the very best even at that time (even considering my hardware constraints). I would appreciate any hints about superior open models for the task that can run offline on my local machine (for instance on a single Nvidia RTX 4090 or a comparable GPU).
+*Note on the open-source models used*: I ran the experiments described below at the end of November 2023 using a single GPU and models available at that time. Given the pace at which LLMs develop, you should probably take the results with a grain of salt. Moreover, the locally run open-source models that I used may not have been the very best even at that time (even considering my hardware constraints).
 
 :sparkles: :sparkles: :sparkles:
 
@@ -22,7 +22,7 @@ Recently in my reading I came across the statistical metric [Fleiss' kappa](http
 This is exactly the type scenario, where I would like to include at least the definition of this statistical assessment measure into my spaced repetition database ([Anki](https://apps.ankiweb.net/)) -- or, in other words, "ankify" the concept.
 
 I learned about spaced repetition and Anki about 6 years ago from several blog posts by Michael Nielsen, who specifically also covers the topic of creating flashcards for sophisticated mathematical topics {% cite Nielsen2018 Nielsen2019 %}.
-Indeed I have noticed beneficial effects of my use of Anki as a knowledge worker over the last 5-6 years as well as for some of my hobbies. I just wish sometimes, I were more consistent and disciplined in my use of Anki. But let's reserve this discussion for another occasion, since the benefits and challenges of spaced repetition is not the topic of this blog post.
+Indeed I have noticed beneficial effects of my use of Anki as a knowledge worker over the last 5-6 years as well as for some of my hobbies. I just wish sometimes that I were more consistent and disciplined in my use of Anki. But let's reserve this discussion for another occasion, since the benefits and challenges of spaced repetition is not the topic of this blog post.
 
 I have also been playing around with LLMs for a little while. But the vast majority of it was using the OpenAI API (mostly via the excellent [ShellGPT](https://github.com/TheR1D/shell_gpt) and sometimes from Python directly), and I was looking for a good excuse to play around with LLMs more and to try out some open-source models that can run locally on my computer, such as those based on Llama 2 (unfortunately the Mixtral models were not released yet at the time). So, it seemed it would be a great idea to use different LLMs to generate a bunch of suggested Anki flashcards based on articles about Fleiss' kappa, and I based my prompts to the LLMs in part on Michael Nielsen's articles referenced above (see below for details about my prompting strategies).
 
@@ -92,7 +92,7 @@ However, I wanted to get the model to generate more sophisticated question-answe
 
 #### A longer more complex prompt (`GPT4_cont1` in the results figure)
 
-To "teach" the model how I want it to go about creating Anki cards for me and about the purpose of the Anki cards (what I want to get out of my spaced repetition practice), I decided to first feed it with the two articles on the topic {% cite Nielsen2018 Nielsen2019 %}:
+To "teach" the model how I want it to go about creating Anki cards for me and about the purpose of the Anki cards (what I want to get out of my spaced repetition practice), I decided to first feed it with two articles on the topic {% cite Nielsen2018 Nielsen2019 %}:
 
 `prompt = "I want to you to learn about spaced repetition systems (SRS) such as Anki, so that you can act as a professional Anki card creator, with a particular expertise at creating Anki cards for topics in mathematics and statistics. Below I provide you first with an introductory text about spaced repetition systems by Michael Nielsen (starting after the string '--- FIRST TEXT ---' and ending with the string '--- FIRST TEXT END ---'). Then I provide you with another article by Michael Nielsen about creating Anki cards for mathematical topics (starting after the string '--- SECOND TEXT ---' and ending with the string '--- SECOND TEXT END ---'). Based on this reading material please explain what process you will follow, as a professional Anki card creator, to create Anki cards for me based on other articles, papers or notes that I will provide in the future."`
 
@@ -150,12 +150,12 @@ The prompt here was identical to the one used in the respective GPT-4 section ab
 
 Next I wanted to try out a few open-source models, running locally on my computer, to perform the same flashcard generation task.
 
-There is an overwhelming number of options for open-source models that can be downloaded from Huggingface (or maybe one should rather call them "open-weight models" for a better more precise terminology :upside_down_face:).
+There is an overwhelming number of options for open-source models that can be downloaded from Huggingface (or maybe one should rather call them "open-weight models" for a better more precise terminology).
 So, a lot to choose from, and there are multiple leaderboards that can guide the choice, such as the [Huggingface "Open LLM Leaderboard"](https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard) or the ["Chatbot Arena"](https://lmsys.org/blog/2023-12-07-leaderboard/).
 However, I haven't dedicated time yet to thoroughly understand the metrics and construction of such leaderboards. For that reason, I didn't guide my model choices on any leaderboards for now.
-What I did instead is trying out a few different models that I've seen mentioned on the internet in other people's experimentations. I've then chosen to stick with a couple of those models that would run on my hardware given the prompts I was using, and seemed to provide useable output for the task in question. The computer I was using for this is basically a gaming PC with an Nvidia RTX 4090 graphics card and, other than that, somewhat older mid-level components.
+What I did instead was try out a few different models that I've seen mentioned on the internet in other people's experimentations. I've then chosen to stick with a couple of those models that would run on my hardware given the prompts I was using, and seemed to provide useable output for the task in question. The computer I was using for this is basically a gaming PC with an Nvidia RTX 4090 graphics card and, other than that, somewhat older mid-level components.
 
-Note that I ran the experiments described below at the end of November 2023. The available open-source models/solutions may have improved considerably since then, or may not have been the very best open models for the given task in the first place (even for my hardware constraints). I would appreciate any hints about superior open models for the task that can run offline on my local machine (for instance on a single Nvidia RTX 4090 or a comparable gaming GPU, or possibly CPU-only but I'm inpatient).
+Note that I ran the experiments described below at the end of November 2023. The available open-source models/solutions may have improved considerably since then, or may not have been the very best open models for the given task in the first place (even for my hardware constraints). I would appreciate any hints about superior open models for the task that can run offline on my local machine (for instance on a single Nvidia RTX 4090 or a comparable gaming GPU, or possibly CPU-only but I'm impatient).
 
 #### Running open LLMs on a modern Nvidia GPU
 
@@ -218,7 +218,7 @@ This query gave me 7 reasonably-looking flashcards as question-answer pairs. Aft
 
 After the partially successful attempt above, I decided to try replacing the scraped Wikipedia article on Fleiss' Kappa with a somewhat more manually curated text about Fleiss' Kappa. That "more manually curated text" was me copy-pasting only the relevant parts of the Wikipedia article, and with a better formatting than what I had obtained previously with the Wikipedia API Python package in an automated fashion.
 
-In addition, the copy-pasted Wikipedia excepts were prepended by a very simple sentence describing the task:
+In addition, the copy-pasted Wikipedia excerpts were prepended by a very simple sentence describing the task:
 
 `Given the text below, suggest questions and the corresponding answers to use in a quiz or exam for a class of undergraduate students.`
 
@@ -241,7 +241,7 @@ where the "more curated" text on Fleiss' Kappa was appended after "TEXT".
 
 #### LLMs using llama.cpp on the CPU (`llama.cpp-Llama2-7B` in the results figures)
 
-Finally, I also wanted to explore the use of LLMs without an Nvidia GPU, i.e., running on the CPU of my computer, by utilizing the [llama.cpp](https://github.com/abetlen/llama-cpp-python) Python package. While llama.cpp allows to run Meta's LLaMA models on different kinds of hardware, I used the default Linux install which runs on CPU only.
+Finally, I also wanted to explore the use of LLMs without an Nvidia GPU, i.e., running on the CPU of my computer, by utilizing the [llama.cpp](https://github.com/abetlen/llama-cpp-python) Python package. While llama.cpp allows you to run Meta's LLaMA models on different kinds of hardware, I used the default Linux install which runs on CPU only.
 
 The specific model I used in conjunction with llama.cpp was [llama-2-7b-chat.Q5_K_M.gguf](https://huggingface.co/TheBloke/Llama-2-7B-Chat-GGUF) (again, something I saw in Jeremy Howard's "A Hackers' Guide to Large Language Models" video if I remember correctly).
 
@@ -273,7 +273,7 @@ After creating the LLM-generated flashcards, I put them in random order into a s
 2. Is the LLM-proposed question atomic?
 3. Does the LLM-proposed question-answer pair make sense as a flashcard? This could be a somewhat subjective category, accounting for such factors as whether the flashcard is relevant to the topic, sophisticated enough, not too obvious but not too hard either, etc.
 4. Truthfulness of the LLM-proposed flashcard, i.e., whether the proposed answer is actually a correct answer to the proposed question.
-5. Would I likely use this flashcard (or a very similar flashcard)? I.e., would I use this Q-A pair (or a very similar one) in my Anki deck?
+5. Would I likely use this flashcard (or a very similar flashcard)? i.e., would I use this Q-A pair (or a very similar one) in my Anki deck?
 
 As mentioned above, I blinded myself to the models/prompts used for each generation, and leveraged my forgetfulness by taking a one week break between generating the flashcards and rating them.
 Within each category I put ratings on a scale 0, 0.5, 1. That means I sometimes gave partial credit. For example, for truthfulness, an AI-suggested answer to a flashcard could have two parts, where one may be correct while the other false; such a two-part answer flashcard would likely get a 0.5 in the "truthfulness" category and a 0 for "atomicity".
@@ -285,7 +285,7 @@ Finally, I created flashcards for my actual Anki deck using 21 of the suggested 
 In addition, I looked at embeddings of each AI-generated flashcard, and compared how closely they match the embeddings of the 21 Anki cards that I actually ended up including in my deck (manually modified flashcards based on some of the AI-generated ones).
 For this I used OpenAI's embedding model `text-embedding-ada-002`.
 
-I used cosine similarity, a metric similar to the widely-known Pearson's correlation coefficient, to compare the text embedding of each of the 100 AI-generated card with each of my 21 human-curated flashcard. I then recorded the maximum value from the 21 cosine similarity values for each AI-generated flashcard, which I denote as `max_cos_sim`. The `max_cos_sim` values can be used as another approach to compare the generative models in this experiment, attempting to evaluate how similar the output of each model is to the flashcards that I eventually deemed worthy of including in my spaced repetition deck.
+I used cosine similarity, a metric similar to the widely-known Pearson's correlation coefficient, to compare the text embedding of each of the 100 AI-generated card with each of my 21 human-curated flashcards. I then recorded the maximum value from the 21 cosine similarity values for each AI-generated flashcard, which I denote as `max_cos_sim`. The `max_cos_sim` values can be used as another approach to compare the generative models in this experiment, attempting to evaluate how similar the output of each model is to the flashcards that I eventually deemed worthy of including in my spaced repetition deck.
 
 ### Analysis methods
 
@@ -373,7 +373,7 @@ Here is the breakdown of results per model/prompt:
 
 ### Ratings on *3. Truthfulness*
 
-Note that high truthfulness may not necessary imply high quality of a spaced repetition flashcard, because, for example, the question-answer pair may be far too obvious or far too difficult.
+Note that high truthfulness may not necessarily imply high quality of a spaced repetition flashcard, because, for example, the question-answer pair may be far too obvious or far too difficult.
 Also note that, the truthfulness property isn't necessarily very important for this task (at least to me), because the AI-augmented spaced repetition card creation process would involve checking and/or adjusting each AI-suggested flashcard before adding it to the deck.
 
 Here is the bar graph of the results:
@@ -399,15 +399,15 @@ Here is the breakdown of the results:
 
 ![ results]({{ "/assets/img/2024-01-25-LLMs-for-spaced-repetition/FleissKappa_analysis_results_would-use.png" | absolute_url }})
 
-We see that (somewhat more) manually curating the input the to the offline open-source models improved performance substantially (see `OrcaPlatypus2-13B_prompt3` vs. the other open-source models).  Same is true for several other rating dimensions above. But, as I have mentioned before, this has limited utility, because if I need to manually curate the input text, I could just as well create the flashcards without the help from AI.
+We see that (somewhat more) manually curating the input to the offline open-source models improved performance substantially (see `OrcaPlatypus2-13B_prompt3` vs. the other open-source models).  The same is true for several other rating dimensions above. But, as I have mentioned before, this has limited utility, because if I need to manually curate the input text, I could just as well create the flashcards without the help from AI.
 
-Interestingly, I don't see any particularly strong correlation of the "Would I use a similar flashcard?" ratings with any of the other rating dimensions. This implies that it might depend to a large degree on other not captured factors whether I will use an AI-generated flashcard as basis for creation of new cards for my Anki deck. Perhaps I didn't capture some other important dimensions of flashcard quality, such as perhaps the uniqueness or originality of an AI-generated flashcards, or something else that I didn't think of. Or it could be just highly personal and strongly depend on my specific background, interests, and taste, which are much harder to quantify or measure.
+Interestingly, I don't see any particularly strong correlation of the "Would I use a similar flashcard?" ratings with any of the other rating dimensions. This implies that it might depend to a large degree on other not captured factors whether I will use an AI-generated flashcard as basis for creation of new cards for my Anki deck. Perhaps I didn't capture some other important dimensions of flashcard quality, such as the uniqueness or originality of an AI-generated flashcard, or something else that I didn't think of. Or it could be just highly personal and strongly depend on my specific background, interests, and taste, which are much harder to quantify or measure.
 
 ### Takeaways
 
 There is discussion of the result in the individual subsections above, including some concluding remarks, and I don't want to repeat that information. But here are some key takeaways that I took from the experiments.
 
-- Based on the results above it appears that, as of November 2023, among the compared models, OpenAI's GPT models are best for generating flashcards on compex topics for spaced repetition systems such as Anki, and they are very inexpensive to use (for creating a few flashcards).
+- Based on the results above it appears that, as of November 2023, among the compared models, OpenAI's GPT models are best for generating flashcards on complex topics for spaced repetition systems such as Anki, and they are very inexpensive to use (for creating a few flashcards).
 - It is convenient to have the longer context length of GPT-4 Turbo as it allows to feed it more source material.
 - While the GPT models handled the raw input of scraped web articles very well, the local models (the ones that would run on my limited hardware) were somewhat challenged by it and improved considerably after the input was manually formatted and more curated, which takes human time.
 - So, it appears that the locally run open-source models make limited sense for this task, unless you want to do this really at scale, or if you just like to tinker with these open-source solutions for fun even if they may be slightly inferior. Moreover, it should be possible to tune the models and prompts far beyond what I have tried to improve performance on this task.
