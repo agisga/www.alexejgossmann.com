@@ -432,20 +432,23 @@
 }
 
 
-@misc{fengMonitoringMachineLearning2022,
-  title = {Monitoring Machine Learning ({{ML}})-Based Risk Prediction Algorithms in the Presence of Confounding Medical Interventions},
-  author = {Feng, Jean and Gossmann, Alexej and Pennello, Gene and Petrick, Nicholas and Sahiner, Berkman and Pirracchio, Romain},
-  year = {2022},
-  month = nov,
-  number = {arXiv:2211.09781},
-  eprint = {2211.09781},
+@InProceedings{fengMonitoringMachineLearning2022,
+  title = 	 { Monitoring machine learning-based risk prediction algorithms in the presence of performativity },
+  author =       {Feng, Jean and Gossmann, Alexej and Pennello, Gene and Petrick, Nicholas and Sahiner, Berkman and Pirracchio, Romain},
+  booktitle = 	 {Proceedings of The 27th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {919--927},
+  year = 	 {2024},
+  editor = 	 {Dasgupta, Sanjoy and Mandt, Stephan and Li, Yingzhen},
+  volume = 	 {238},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {02--04 May},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v238/feng24b/feng24b.pdf},
+  url = 	 {https://proceedings.mlr.press/v238/feng24b.html},
   arxiv = {2211.09781},
-  eprinttype = {arxiv},
-  primaryclass = {cs, stat},
-  publisher = {{arXiv}},
-  abstract = {Monitoring the performance of machine learning (ML)-based risk prediction models in healthcare is complicated by the issue of confounding medical interventions (CMI): when an algorithm predicts a patient to be at high risk for an adverse event, clinicians are more likely to administer prophylactic treatment and alter the very target that the algorithm aims to predict. Ignoring CMI by monitoring only the untreated patients--whose outcomes remain unaltered--can inflate false alarm rates, because the evolution of both the model and clinician-ML interactions can induce complex dependencies in the data that violate standard assumptions. A more sophisticated approach is to explicitly account for CMI by modeling treatment propensities, but its time-varying nature makes accurate estimation difficult. Given the many sources of complexity in the data, it is important to determine situations in which a simple procedure that ignores CMI provides valid inference. Here we describe the special case of monitoring model calibration, under either the assumption of conditional exchangeability or time-constant selection bias. We introduce a new score-based cumulative sum (CUSUM) chart for monitoring in a frequentist framework and review an alternative approach using Bayesian inference. Through simulations, we investigate the benefits of combining model updating with monitoring and study when over-trust in a prediction model does (or does not) delay detection. Finally, we simulate monitoring an ML-based postoperative nausea and vomiting risk calculator during the COVID-19 pandemic.},
-  archiveprefix = {arXiv},
+  abstract = 	 {Performance monitoring of machine learning (ML)-based risk prediction models in healthcare is complicated by the issue of performativity: when an algorithm predicts a patient to be at high risk for an adverse event, clinicians are more likely to administer prophylactic treatment and alter the very target that the algorithm aims to predict. A simple approach is to ignore performativity and monitor only the untreated patients, whose outcomes remain unaltered. In general, ignoring performativity may inflate Type I error because (i) untreated patients disproportionally represent those with low predicted risk, and (ii) changes in the clinician’s trust in the ML algorithm and the algorithm itself can induce complex dependencies that violate standard assumptions. Nevertheless, we show that valid inference is still possible when monitoring \textit{conditional} rather than marginal performance measures under either the assumption of conditional exchangeability or time-constant selection bias. Finally, performativity can vary over time and induce nonstationarity in the data, which presents challenges for monitoring. To this end, we introduce a new score-based cumulative sum (CUSUM) monitoring procedure with dynamic control limits. Through extensive simulation studies, we study applications of the score-based CUSUM and how it is affected by various factors, including the efficiency of model updating procedures and the level of clinician trust. Finally, we apply the procedure to detect calibration decay of a risk model during the COVID-19 pandemic.}
 }
+
 
 
 @misc{corollerMultiomicsInvestigationPrognostic2023,
@@ -464,21 +467,23 @@
   langid = {english},
 }
 
-@misc{fengThisModelReliable2023,
+@InProceedings{fengThisModelReliable2023,
   title = {Is This Model Reliable for Everyone? {{Testing}} for Strong Calibration},
   shorttitle = {Is This Model Reliable for Everyone?},
   author = {Feng, Jean and Gossmann, Alexej and Pirracchio, Romain and Petrick, Nicholas and Pennello, Gene and Sahiner, Berkman},
-  year = {2023},
-  month = jul,
-  number = {arXiv:2307.15247},
-  eprint = {arXiv:2307.15247},
+  booktitle = 	 {Proceedings of The 27th International Conference on Artificial Intelligence and Statistics},
+  pages = 	 {181--189},
+  year = 	 {2024},
+  editor = 	 {Dasgupta, Sanjoy and Mandt, Stephan and Li, Yingzhen},
+  volume = 	 {238},
+  series = 	 {Proceedings of Machine Learning Research},
+  month = 	 {02--04 May},
+  publisher =    {PMLR},
+  pdf = 	 {https://proceedings.mlr.press/v238/feng24a/feng24a.pdf},
+  url = 	 {https://proceedings.mlr.press/v238/feng24a.html},
   arxiv = {arXiv:2307.15247},
   github = {jjfeng/testing_strong_calibration},
-  publisher = {{arXiv}},
-  urldate = {2023-09-17},
-  abstract = {In a well-calibrated risk prediction model, the average predicted probability is close to the true event rate for any given subgroup. Such models are reliable across heterogeneous populations and satisfy strong notions of algorithmic fairness. However, the task of auditing a model for strong calibration is well-known to be difficult -- particularly for machine learning (ML) algorithms -- due to the sheer number of potential subgroups. As such, common practice is to only assess calibration with respect to a few predefined subgroups. Recent developments in goodness-of-fit testing offer potential solutions but are not designed for settings with weak signal or where the poorly calibrated subgroup is small, as they either overly subdivide the data or fail to divide the data at all. We introduce a new testing procedure based on the following insight: if we can reorder observations by their expected residuals, there should be a change in the association between the predicted and observed residuals along this sequence if a poorly calibrated subgroup exists. This lets us reframe the problem of calibration testing into one of changepoint detection, for which powerful methods already exist. We begin with introducing a sample-splitting procedure where a portion of the data is used to train a suite of candidate models for predicting the residual, and the remaining data are used to perform a score-based cumulative sum (CUSUM) test. To further improve power, we then extend this adaptive CUSUM test to incorporate cross-validation, while maintaining Type I error control under minimal assumptions. Compared to existing methods, the proposed procedure consistently achieved higher power in simulation studies and more than doubled the power when auditing a mortality risk prediction model.},
-  archiveprefix = {arxiv},
-  keywords = {Computer Science - Machine Learning,Statistics - Machine Learning,Statistics - Methodology},
+  abstract = 	 {In a well-calibrated risk prediction model, the average predicted probability is close to the true event rate for any given subgroup. Such models are reliable across heterogeneous populations and satisfy strong notions of algorithmic fairness. However, the task of auditing a model for strong calibration is well-known to be difficult—particularly for machine learning (ML) algorithms—due to the sheer number of potential subgroups. As such, common practice is to only assess calibration with respect to a few predefined subgroups. Recent developments in goodness-of-fit testing offer potential solutions but are not designed for settings with weak signal or where the poorly calibrated subgroup is small, as they either overly subdivide the data or fail to divide the data at all. We introduce a new testing procedure based on the following insight: if we can reorder observations by their expected residuals, there should be a change in the association between the predicted and observed residuals along this sequence if a poorly calibrated subgroup exists. This lets us reframe the problem of calibration testing into one of changepoint detection, for which powerful methods already exist. We begin with introducing a sample-splitting procedure where a portion of the data is used to train a suite of candidate models for predicting the residual, and the remaining data are used to perform a score-based cumulative sum (CUSUM) test. To further improve power, we then extend this adaptive CUSUM test to incorporate cross-validation, while maintaining Type I error control under minimal assumptions. Compared to existing methods, the proposed procedure consistently achieved higher power in empirical analyses.}
 }
 
 @article{corollerMethodologyGoodMachine2023,
