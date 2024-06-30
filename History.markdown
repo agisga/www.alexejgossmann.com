@@ -10,6 +10,7 @@
   * Make docs consistent with code (#657)
   * Highlight that the base branch is v3 (#719)
   * Improve documentation for config options (#760)
+  * Add platform X supporting in README (#780)
 
 ### Minor Enhancements
 
@@ -37,6 +38,9 @@
   * Add `auto` skin which honors the `prefers-color-scheme` media query (#634)
   * Add google scholar. (#673)
   * Add `x` social icon (#756)
+  * Add Codeberg icon and update list of supported social links (#788)
+  * Added whatsapp social icon. (#781)
+  * Update GitLab icon (#765)
 
 ### Major Enhancements
 
@@ -68,6 +72,7 @@
   * Improve &#34;Subscribe&#34; link in footer (#698)
   * Fix deprecation warnings from Dart Sass (#700)
   * Fix reference to base layout in `404.html` (#713)
+  * Minimal fixes for Disqus (#775)
 
 ### Development Fixes
 
