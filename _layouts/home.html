@@ -33,7 +33,7 @@ layout: base
             {{ post.title | escape }}
           </a>
         </h3>
-        {%- if site.show_excerpts -%}
+        {%- if site.minima.show_excerpts -%}
           {{ post.excerpt }}
           <a href="{{ site.baseurl }}{{ post.url }}">READ MORE</a>
         {%- endif -%}
@@ -58,7 +58,5 @@ layout: base
         </ul>
       </div>
     {%- endif %}
-
   {%- endif -%}
-
 </div>
