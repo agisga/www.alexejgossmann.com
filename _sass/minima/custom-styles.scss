@@ -23,5 +23,44 @@
 .footer-heading {
   @include relative-font-size(1.5);
   font-family: $title-font;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: calc($spacing-unit / 2);
 }
+
+// Prominent social links on the About page (see about.md).
+// Reads the same `minima.social_links` config as the footer, rendered larger.
+.about-social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: $spacing-unit;
+  margin: $spacing-unit 0;
+}
+
+.about-social-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3em;
+
+  &,
+  &:visited {
+    color: $brand-color-dark;
+    text-decoration: none;
+  }
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: none;
+  }
+
+  .fa-brands {
+    font-size: 2.4rem;
+    line-height: 1;
+  }
+
+  .about-social-label {
+    @include relative-font-size(0.8125);
+    letter-spacing: 0.02em;
+  }
+}
+

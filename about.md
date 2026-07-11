@@ -9,6 +9,15 @@ I'm professionally interested in machine learning / AI, statistics, mathematics,
 
 **_0-fold Cross-Validation_** is the name of this <a href="{{ site.baseurl }}/">blog</a>.
 
+<div class="about-social">
+  {%- for entry in site.minima.social_links -%}
+  <a class="about-social-link" rel="me" href="{{ entry.url }}" target="_blank" title="{{ entry.title }}">
+    <span class="fa-brands fa-{{ entry.icon }}" aria-hidden="true"></span>
+    <span class="about-social-label">{{ entry.title }}</span>
+  </a>
+  {%- endfor -%}
+</div>
+
 **2025 Update:** Accepting the reality that I'm a once-a-year kind of blogger.
 
 ![An image]({{ "/assets/img/alexej-lake-small.png" | absolute_url }})
